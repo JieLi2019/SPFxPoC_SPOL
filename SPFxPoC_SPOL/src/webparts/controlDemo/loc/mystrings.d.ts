@@ -2,6 +2,7 @@ declare interface IControlDemoWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   DescriptionFieldLabel: string;
+  ConfigurationFieldLabel: string;
 }
 
 declare module 'ControlDemoWebPartStrings' {

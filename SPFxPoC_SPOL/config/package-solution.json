@@ -1,14 +1,14 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "sp-fx-po-c-spol-client-side-solution",
+    "name": "SPFxPoC-SPOL-client-side-solution",
     "id": "38d0cf53-b6e1-4a52-ad44-d9c2538869b8",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
-    "skipFeatureDeployment": "false",
-    "isDomainIsolated": "false"
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false
   },
   "paths": {
-    "zippedPackage": "solution/sp-fx-po-c-spol.sppkg"
+    "zippedPackage": "solution/SPFxPoC-SPOL.sppkg"
   }
 }
