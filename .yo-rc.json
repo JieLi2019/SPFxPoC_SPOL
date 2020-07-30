@@ -1,0 +1,15 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "solutionName": "SPFxPoC_SPOL",
+    "environment": "spo",
+    "packageManager": "npm",
+    "skipFeatureDeployment": "false",
+    "isDomainIsolated": "false",
+    "componentType": "webpart",
+    "framework": "react",
+    "componentName": "ControlDemo",
+    "componentDescription": "This is a demo to show the different controls available in SPFx development.",
+    "isCreatingSolution": true,
+    "whichFolder": "subdir"
+  }
+}

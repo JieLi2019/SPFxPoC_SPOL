@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FE6EB89-BA4D-4D0F-B071-D23C10317C9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin\Debug\</OutputPath>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPFxPoC_SPOL</RootNamespace>
+    <AssemblyName>SPFxPoC_SPOL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Windows\System32\cmd.exe</StartProgram>
+    <StartArguments>/K  gulp serve</StartArguments>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Windows\System32\cmd.exe</StartProgram>
+    <StartArguments>/K  gulp serve</StartArguments>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include=".yo-rc.json" />
+    <None Include="config\config.json" />
+    <None Include="config\copy-assets.json" />
+    <None Include="config\deploy-azure-storage.json" />
+    <None Include="config\package-solution.json" />
+    <None Include="config\serve.json" />
+    <None Include="config\write-manifests.json" />
+    <None Include="generator.log" />
+    <None Include="package-lock.json" />
+    <None Include="package.json" />
+    <None Include="src\webparts\controlDemo\components\ControlDemo.module.scss" />
+    <None Include="src\webparts\controlDemo\ControlDemoWebPart.manifest.json" />
+    <None Include="tsconfig.json" />
+    <None Include="tslint.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gulpfile.js" />
+    <Content Include="src\webparts\controlDemo\loc\en-us.js" />
+    <Content Include="teams\f0e3d9b0-99a4-45ff-8ae9-8686c0cddbcd_color.png" />
+    <Content Include="teams\f0e3d9b0-99a4-45ff-8ae9-8686c0cddbcd_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\index.ts" />
+    <TypeScriptCompile Include="src\webparts\controlDemo\components\ControlDemo.tsx" />
+    <TypeScriptCompile Include="src\webparts\controlDemo\components\IControlDemoProps.ts" />
+    <TypeScriptCompile Include="src\webparts\controlDemo\ControlDemoWebPart.ts" />
+    <TypeScriptCompile Include="src\webparts\controlDemo\loc\mystrings.d.ts" />
+  </ItemGroup>
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

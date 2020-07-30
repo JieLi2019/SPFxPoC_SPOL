@@ -1,0 +1,17 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.10.0",
+    "libraryName": "sp-fx-po-c-spol",
+    "libraryId": "38d0cf53-b6e1-4a52-ad44-d9c2538869b8",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "SPFxPoC_SPOL",
+    "skipFeatureDeployment": "false",
+    "componentType": "webpart",
+    "framework": "react",
+    "componentName": "ControlDemo",
+    "componentDescription": "This is a demo to show the different controls available in SPFx development.",
+    "isCreatingSolution": true,
+    "isDomainIsolated": "false"
+  }
+}

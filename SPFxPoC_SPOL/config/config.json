@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "control-demo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/controlDemo/ControlDemoWebPart.js",
+          "manifest": "./src/webparts/controlDemo/ControlDemoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ControlDemoWebPartStrings": "lib/webparts/controlDemo/loc/{locale}.js"
+  }
+}

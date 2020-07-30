@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPFxPoC_SPOL", "SPFxPoC_SPOL\SPFxPoC_SPOL.csproj", "{5FE6EB89-BA4D-4D0F-B071-D23C10317C9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FE6EB89-BA4D-4D0F-B071-D23C10317C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE6EB89-BA4D-4D0F-B071-D23C10317C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {772C5085-BDE3-4E27-9836-FFB3A4B05E58}
+	EndGlobalSection
+EndGlobal
