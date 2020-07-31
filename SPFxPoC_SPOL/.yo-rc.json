@@ -7,11 +7,9 @@
     "packageManager": "npm",
     "solutionName": "SPFxPoC_SPOL",
     "skipFeatureDeployment": "false",
-    "componentType": "webpart",
     "framework": "react",
-    "componentName": "ControlDemo",
-    "componentDescription": "This is a demo to show the different controls available in SPFx development.",
-    "isCreatingSolution": true,
-    "isDomainIsolated": "false"
+    "isCreatingSolution": false,
+    "isDomainIsolated": "false",
+    "componentType": "webpart"
   }
 }

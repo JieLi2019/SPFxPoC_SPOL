@@ -42,24 +42,36 @@
     <None Include="generator.log" />
     <None Include="package-lock.json" />
     <None Include="package.json" />
+    <None Include="src\libraries\ConfigEditor\configEditor.manifest.json" />
     <None Include="src\webparts\controlDemo\components\ControlDemo.module.scss" />
     <None Include="src\webparts\controlDemo\ControlDemoWebPart.manifest.json" />
+    <None Include="src\webparts\newsList\components\NewsList.module.scss" />
+    <None Include="src\webparts\newsList\NewsListWebPart.manifest.json" />
     <None Include="tsconfig.json" />
     <None Include="tslint.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="gulpfile.js" />
+    <Content Include="src\libraries\nonAMD\TestModuleOne.js" />
     <Content Include="src\webparts\controlDemo\loc\en-us.js" />
+    <Content Include="src\webparts\newsList\loc\en-us.js" />
     <Content Include="teams\f0e3d9b0-99a4-45ff-8ae9-8686c0cddbcd_color.png" />
     <Content Include="teams\f0e3d9b0-99a4-45ff-8ae9-8686c0cddbcd_outline.png" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\index.ts" />
+    <TypeScriptCompile Include="src\libraries\ConfigEditor\configEditor.ts" />
     <TypeScriptCompile Include="src\webparts\controlDemo\components\ControlDemo.tsx" />
     <TypeScriptCompile Include="src\webparts\controlDemo\components\IControlDemoProps.ts" />
     <TypeScriptCompile Include="src\webparts\controlDemo\ControlDemoWebPart.ts" />
     <TypeScriptCompile Include="src\webparts\controlDemo\loc\mystrings.d.ts" />
+    <TypeScriptCompile Include="src\webparts\newsList\components\INewsListProps.ts" />
+    <TypeScriptCompile Include="src\webparts\newsList\components\NewsList.tsx" />
+    <TypeScriptCompile Include="src\webparts\newsList\loc\mystrings.d.ts" />
+    <TypeScriptCompile Include="src\webparts\newsList\NewsListWebPart.ts" />
+    <TypeScriptCompile Include="src\webparts\newsList\testmodules.d.ts" />
   </ItemGroup>
+  <ItemGroup />
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">

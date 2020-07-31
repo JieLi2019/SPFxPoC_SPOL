@@ -9,11 +9,37 @@
           "manifest": "./src/webparts/controlDemo/ControlDemoWebPart.manifest.json"
         }
       ]
+    },
+    "news-list-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/newsList/NewsListWebPart.js",
+          "manifest": "./src/webparts/newsList/NewsListWebPart.manifest.json"
+        }
+      ]
+    },
+    "config-editor": {
+      "components": [
+        {
+          "entrypoint": "./lib/libraries/ConfigEditor/configEditor.js",
+          "manifest": "./src/libraries/ConfigEditor/configEditor.manifest.json"
+        }
+      ]
     }
   },
-  "externals": {},
+  "externals": {
+    "testModuleOne": {
+      "path": "./src/libraries/nonAMD/TestModuleOne.js",
+      "globalName": "TestModuleOne"
+    },
+    "configEditor": {
+      "path": "./dist/config-editor.js",
+      "globalName": "ConfigEditor"
+    }
+  },
   "localizedResources": {
     "ControlDemoWebPartStrings": "lib/webparts/controlDemo/loc/{locale}.js",
-    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "NewsListWebPartStrings": "lib/webparts/newsList/loc/{locale}.js"
   }
 }
