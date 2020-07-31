@@ -20,7 +20,7 @@ export interface INewsListWebPartProps {
   configurationJson: string;
 }
 
-export default class NewsListWebPart extends BaseClientSideWebPart <INewsListWebPartProps> {
+export default class NewsListWebPart extends BaseClientSideWebPart<INewsListWebPartProps> {
 
   public render(): void {
     const element: React.ReactElement<INewsListProps> = React.createElement(
@@ -49,7 +49,7 @@ export default class NewsListWebPart extends BaseClientSideWebPart <INewsListWeb
 
     propertiesGroup.groupFields.splice(0, 0, PropertyPaneTextField('description', {
       label: strings.DescriptionFieldLabel
-    }))
+    }));
 
     return {
       pages: [
@@ -71,7 +71,7 @@ export default class NewsListWebPart extends BaseClientSideWebPart <INewsListWeb
       // convert JSON to object
       let config = JSON.parse(this.properties.configurationJson);
 
-      Object.keys(config).forEach(function (key) {
+      Object.keys(config).forEach((key) => {
         if (key == propertyPath) {
           config[key].value = newValue;
         }

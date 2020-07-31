@@ -20,7 +20,7 @@ export class ConfigEditor {
 
     // generate the properties array for property pane based on the JSON object
 
-    Object.keys(config).forEach(function (key) {
+    Object.keys(config).forEach((key) => {
       var setting = config[key];
 
       if (setting.type != null) {
