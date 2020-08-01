@@ -13,7 +13,7 @@ import * as strings from 'NewsListWebPartStrings';
 import NewsList from './components/NewsList';
 import { INewsListProps } from './components/INewsListProps';
 
-import { ConfigEditor } from 'configEditor';
+import * as myLibrary from 'library-poc';
 
 export interface INewsListWebPartProps {
   description: string;
@@ -43,7 +43,7 @@ export default class NewsListWebPart extends BaseClientSideWebPart<INewsListWebP
   }
 
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
-    const myConfigEditor = new ConfigEditor();
+    const myConfigEditor = new myLibrary.ConfigEditorLibrary();
 
     let propertiesGroup: IPropertyPaneGroup = myConfigEditor.getConfigurationOptions(this.properties.configurationJson, strings.BasicGroupName);
 

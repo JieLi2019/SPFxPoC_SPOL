@@ -1,6 +1,10 @@
 import { IPropertyPaneGroup, PropertyPaneCheckbox, PropertyPaneHorizontalRule, PropertyPaneTextField } from '@microsoft/sp-webpart-base';
 
-export class ConfigEditor {
+export class ConfigEditorLibrary {
+  public name(): string {
+    return 'ConfigEditorLibrary';
+  }
+
   public sayHi(name: string): string {
     return `Hi ${name}`;
   }

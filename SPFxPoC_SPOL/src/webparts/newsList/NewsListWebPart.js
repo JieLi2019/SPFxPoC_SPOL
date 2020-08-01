@@ -20,7 +20,7 @@ var sp_property_pane_1 = require("@microsoft/sp-property-pane");
 var sp_webpart_base_1 = require("@microsoft/sp-webpart-base");
 var strings = require("NewsListWebPartStrings");
 var NewsList_1 = require("./components/NewsList");
-var configEditor_1 = require("configEditor");
+var myLibrary = require("library-poc");
 var NewsListWebPart = /** @class */ (function (_super) {
     __extends(NewsListWebPart, _super);
     function NewsListWebPart() {
@@ -44,7 +44,7 @@ var NewsListWebPart = /** @class */ (function (_super) {
         configurable: true
     });
     NewsListWebPart.prototype.getPropertyPaneConfiguration = function () {
-        var myConfigEditor = new configEditor_1.ConfigEditor();
+        var myConfigEditor = new myLibrary.ConfigEditorLibrary();
         var propertiesGroup = myConfigEditor.getConfigurationOptions(this.properties.configurationJson, strings.BasicGroupName);
         propertiesGroup.groupFields.splice(0, 0, sp_property_pane_1.PropertyPaneTextField('description', {
             label: strings.DescriptionFieldLabel

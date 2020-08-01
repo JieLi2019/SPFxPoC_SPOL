@@ -7,14 +7,3 @@ declare module "testModuleOne" {
   var testModuleOne: ITestModuleOne;
   export = testModuleOne;
 }
-
-
-declare module 'configEditor' {
-  import { IPropertyPaneGroup } from '@microsoft/sp-webpart-base';
-
-  class ConfigEditor {
-    sayHi(name: string): string;
-
-    getConfigurationOptions(configurationJson: string, baseGroupName: string): IPropertyPaneGroup;
-  }
-}

@@ -3,9 +3,12 @@ import styles from './NewsList.module.scss';
 import { INewsListProps } from './INewsListProps';
 import { escape } from '@microsoft/sp-lodash-subset';
 import * as testModuleOne from 'testModuleOne';
+import * as myLibrary from 'library-poc';
 
 export default class NewsList extends React.Component<INewsListProps, {}> {
   public render(): React.ReactElement<INewsListProps> {
+    const myInstance = new myLibrary.MySpFxLibraryLibrary();
+
     return (
       <div className={ styles.newsList }>
         <div className={ styles.container }>
@@ -16,6 +19,8 @@ export default class NewsList extends React.Component<INewsListProps, {}> {
               <p className={styles.description}>{escape(this.props.description)}</p>
 
               <p className={styles.description}>{testModuleOne.sayHi('Jerry')}</p>
+
+              <p>{myInstance.getCurrentTime()}</p>
 
               <p className={styles.description}>Custom Configration: {this.props.configurationJson}</p>
             </div>

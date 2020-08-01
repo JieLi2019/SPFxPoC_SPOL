@@ -17,24 +17,12 @@
           "manifest": "./src/webparts/newsList/NewsListWebPart.manifest.json"
         }
       ]
-    },
-    "config-editor": {
-      "components": [
-        {
-          "entrypoint": "./lib/libraries/ConfigEditor/configEditor.js",
-          "manifest": "./src/libraries/ConfigEditor/configEditor.manifest.json"
-        }
-      ]
     }
   },
   "externals": {
     "testModuleOne": {
       "path": "./src/libraries/nonAMD/TestModuleOne.js",
       "globalName": "TestModuleOne"
-    },
-    "configEditor": {
-      "path": "./dist/config-editor.js",
-      "globalName": "ConfigEditor"
     }
   },
   "localizedResources": {

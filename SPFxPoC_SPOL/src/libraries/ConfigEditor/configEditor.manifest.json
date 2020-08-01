@@ -1,8 +1,0 @@
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-component-manifest.schema.json",
-  "id": "5e437b1b-ea54-4bfb-a8f7-12178d0739a9",
-  "componentType": "Library",
-  "version": "0.0.1",
-  "manifestVersion": 2,
-  "alias": "ConfigEditor"
-}

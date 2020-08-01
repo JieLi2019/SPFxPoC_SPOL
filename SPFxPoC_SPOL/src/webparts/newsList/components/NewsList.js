@@ -17,12 +17,14 @@ var React = require("react");
 var NewsList_module_scss_1 = require("./NewsList.module.scss");
 var sp_lodash_subset_1 = require("@microsoft/sp-lodash-subset");
 var testModuleOne = require("testModuleOne");
+var myLibrary = require("library-poc");
 var NewsList = /** @class */ (function (_super) {
     __extends(NewsList, _super);
     function NewsList() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     NewsList.prototype.render = function () {
+        var myInstance = new myLibrary.MySpFxLibraryLibrary();
         return (React.createElement("div", { className: NewsList_module_scss_1.default.newsList },
             React.createElement("div", { className: NewsList_module_scss_1.default.container },
                 React.createElement("div", { className: NewsList_module_scss_1.default.row },
@@ -31,6 +33,7 @@ var NewsList = /** @class */ (function (_super) {
                         React.createElement("p", { className: NewsList_module_scss_1.default.subTitle }, "Customize the property pane based on the given configuration Json."),
                         React.createElement("p", { className: NewsList_module_scss_1.default.description }, sp_lodash_subset_1.escape(this.props.description)),
                         React.createElement("p", { className: NewsList_module_scss_1.default.description }, testModuleOne.sayHi('Jerry')),
+                        React.createElement("p", null, myInstance.getCurrentTime()),
                         React.createElement("p", { className: NewsList_module_scss_1.default.description },
                             "Custom Configration: ",
                             this.props.configurationJson))))));

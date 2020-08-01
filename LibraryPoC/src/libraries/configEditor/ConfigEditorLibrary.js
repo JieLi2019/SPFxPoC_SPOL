@@ -1,13 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var sp_webpart_base_1 = require("@microsoft/sp-webpart-base");
-var ConfigEditor = /** @class */ (function () {
-    function ConfigEditor() {
+var ConfigEditorLibrary = /** @class */ (function () {
+    function ConfigEditorLibrary() {
     }
-    ConfigEditor.prototype.sayHi = function (name) {
+    ConfigEditorLibrary.prototype.name = function () {
+        return 'ConfigEditorLibrary';
+    };
+    ConfigEditorLibrary.prototype.sayHi = function (name) {
         return "Hi " + name;
     };
-    ConfigEditor.prototype.getConfigurationOptions = function (configurationJson, baseGroupName) {
+    ConfigEditorLibrary.prototype.getConfigurationOptions = function (configurationJson, baseGroupName) {
         // convert JSON to object
         var config = JSON.parse(configurationJson);
         //console.log(config);
@@ -44,7 +47,7 @@ var ConfigEditor = /** @class */ (function () {
         });
         return propertiesGroup;
     };
-    return ConfigEditor;
+    return ConfigEditorLibrary;
 }());
-exports.ConfigEditor = ConfigEditor;
-//# sourceMappingURL=configEditor.js.map
+exports.ConfigEditorLibrary = ConfigEditorLibrary;
+//# sourceMappingURL=ConfigEditorLibrary.js.map

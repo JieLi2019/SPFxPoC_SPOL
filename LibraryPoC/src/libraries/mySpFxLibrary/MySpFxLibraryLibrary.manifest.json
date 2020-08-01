@@ -1,0 +1,9 @@
+{
+  "id": "b8ff17ed-a7a4-4384-b3ac-945dafc36821",
+  "alias": "MySpFxLibraryLibrary",
+  "componentType": "Library",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2
+}

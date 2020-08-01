@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "my-sp-fx-library-library": {
+      "components": [
+        {
+          "entrypoint": "./lib/libraries/mySpFxLibrary/MySpFxLibraryLibrary.js",
+          "manifest": "./src/libraries/mySpFxLibrary/MySpFxLibraryLibrary.manifest.json"
+        }
+      ]
+    },
+    "config-editor-library": {
+      "components": [
+        {
+          "entrypoint": "./lib/libraries/configEditor/ConfigEditorLibrary.js",
+          "manifest": "./src/libraries/configEditor/ConfigEditorLibrary.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MySpFxLibraryLibraryStrings": "lib/libraries/mySpFxLibrary/loc/{locale}.js",
+    "ConfigEditorLibraryStrings": "lib/libraries/configEditor/loc/{locale}.js"
+  }
+}

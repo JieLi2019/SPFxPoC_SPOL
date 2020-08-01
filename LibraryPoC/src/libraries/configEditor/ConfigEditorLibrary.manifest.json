@@ -1,0 +1,9 @@
+{
+  "id": "09500aad-0940-49a5-9f02-c24e73fb2442",
+  "alias": "ConfigEditorLibrary",
+  "componentType": "Library",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2
+}
